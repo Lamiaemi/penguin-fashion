@@ -3,9 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Penguin Fashion</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>
+        .roboto-normal {
+        font-family: "Roboto", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "width" 100;
+        }
+        .bebas-neue-regular {
+        font-family: "Bebas Neue", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        </style>
 </head>
-<body>
-    
+<body class="roboto-normal">
+    <header class="bg-[#FFFBF0]">
+        <!-- <nav>
+            <div class="navbar grid grid-cols-2 justify-items-stretch">
+                <img src="icons/logo.png" alt="A logo for Penguin Fashion featuring a cartoon penguin wearing a scarf and hat, standing next to an igloo. The text 'Penguin Fashion' is displayed in a modern font, with 'Penguin' in green (#A4BC46) and 'Fashion' in dark gray (#553802).">
+                <ul class="grid grid-cols-4">
+                    <li><a href="#">OME</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </nav> -->
+        <!-- banner section -->
+        <section class="md:flex items-center justify-between w-10/12 mx-auto">
+           <div class="space-y-8">
+            <h1 class="text-9xl bebas-neue-regular"><span class="text-[#553802]">Be the Penguins</span><br>
+                <span class="text-[#363958]">of Winter</span>
+            </h1>
+            <p class="text-[#3E3E3E] text-2xl">This is the homepage of Penguin Fashion, an online store that specializes in
+                <br>stylish jackets for both men and women. </p>
+           </div>
+           <div class="">
+            <img src="images/model.png" alt="Penguin Fashion homepage with a slogan 'Be the Penguins of Winter,' featuring a smiling woman wearing a black leather jacket.">
+           </div>
+        </section>
+        
+    </header>
+    <main class="w-10/12 mx-auto">
+       <!-- women section -->
+        <section class="space-y-12 my-28">
+        <h1 class="text-7xl bebas-neue-regular ">WOMAN JACKET</h1>
+        <!-- card section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- card 1 -->
+            <div class="shadow-xl rounded-xl p-8 space-y-4">
+                <div class="bg-[#F1F1F1] rounded-xl p-8">
+                    <img src="images/jacket-1.png" alt="">
+                </div>
+                <h4 class="font-bold text-4xl">Yellow Coat Jacket</h4>
+                <p class="text-2xl text-[#3E3E3E]">A cozy and fashionable option for chilly days.</p>
+                <div class="flex items-center gap-4 justify-between">
+                    <span class="text-[#FABE4C] text-4xl font-extrabold">$234</span>
+                    <button class="flex gap-2 items-center p-4 sm:p-8 rounded-2xl text-2xl text-white bg-linear-to-r from-[#A4BC46] to-[#85A019]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                            <path
+                                d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                        </svg>BUY NOW</button>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="shadow-xl rounded-xl p-8 space-y-4">
+                <div class="bg-[#F1F1F1] rounded-xl p-8">
+                    <img src="images/jacket-2.png" alt="">
+                </div>
+                <h4 class="font-bold text-4xl">Ladies Jacket</h4>
+                <p class="text-2xl text-[#3E3E3E]">A functional yet stylish yellow jacket for everyday use.</p>
+                <div class="flex items-center gap-4 justify-between">
+                    <span class="text-[#FABE4C] text-4xl font-extrabold">$254</span>
+                    <button
+                        class="flex gap-2 items-center p-4 sm:p-8 rounded-2xl text-2xl text-white bg-linear-to-r from-[#A4BC46] to-[#85A019]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                            <path
+                                d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                        </svg>BUY NOW</button>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="shadow-xl rounded-xl p-8 space-y-4">
+                <div class="bg-[#F1F1F1] rounded-xl p-8">
+                    <img src="images/jacket-3.png" alt="">
+                </div>
+                <h4 class="font-bold text-4xl">Woman Leather Jacket</h4>
+                <p class="text-2xl text-[#3E3E3E]">A bold red leather jacket perfect for making a statement.</p>
+                <div class="flex items-center gap-4 justify-between">
+                    <span class="text-[#FABE4C] text-4xl font-extrabold">$289</span>
+                    <button
+                        class="flex gap-2 items-center p-4 sm:p-8 rounded-2xl text-2xl text-white bg-linear-to-r from-[#A4BC46] to-[#85A019]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                            <path
+                                d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                        </svg>BUY NOW</button>
+                </div>
+            </div>
+            
+        </div>
+        </section>
+       <!-- mens section -->
+        <section class="space-y-12 my-28">
+            <h1 class="text-7xl bebas-neue-regular ">MAN JACKET</h1>
+            <!-- card section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- card 1 -->
+                <div class="shadow-xl rounded-xl p-8 space-y-4">
+                    <div class="bg-[#F1F1F1] rounded-xl p-8">
+                        <img src="images/jacket-4.png" alt="">
+                    </div>
+                    <h4 class="font-bold text-4xl">Snowboard Jacket Mens</h4>
+                    <p class="text-2xl text-[#3E3E3E]">A yellow and grey jacket ideal for winter sports.</p>
+                    <div class="flex items-center gap-4 justify-between">
+                        <span class="text-[#FABE4C] text-4xl font-extrabold">$234</span>
+                        <button
+                            class="flex gap-2 items-center p-4 sm:p-8 rounded-2xl text-2xl text-white bg-linear-to-r from-[#A4BC46] to-[#85A019]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>BUY NOW</button>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="shadow-xl rounded-xl p-8 space-y-4">
+                    <div class="bg-[#F1F1F1] rounded-xl p-8">
+                        <img src="images/jacket-5.png" alt="">
+                    </div>
+                    <h4 class="font-bold text-4xl">Man Leather Jackets</h4>
+                    <p class="text-2xl text-[#3E3E3E]">A classic brown leather jacket for a rugged yet refined look.</p>
+                    <div class="flex items-center gap-4 justify-between">
+                        <span class="text-[#FABE4C] text-4xl font-extrabold">$254</span>
+                        <button
+                            class="flex gap-2 items-center p-4 sm:p-8 rounded-2xl text-2xl text-white bg-linear-to-r from-[#A4BC46] to-[#85A019]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>BUY NOW</button>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="shadow-xl rounded-xl p-8 space-y-4">
+                    <div class="bg-[#F1F1F1] rounded-xl p-8">
+                        <img src="images/jacket-6.png" alt="">
+                    </div>
+                    <h4 class="font-bold text-4xl">Man Casual Jackets</h4>
+                    <p class="text-2xl text-[#3E3E3E]">A comfortable and lightweight black jacket for casual outings.</p>
+                    <div class="flex items-center gap-4 justify-between">
+                        <span class="text-[#FABE4C] text-4xl font-extrabold">$289</span>
+                        <button
+                            class="flex gap-2 items-center p-4 sm:p-8 rounded-2xl text-2xl text-white bg-linear-to-r from-[#A4BC46] to-[#85A019]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>BUY NOW</button>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+       <!-- last section -->
+        <section class="my-10">
+            <div class="md:flex gap-10 ">
+                <!-- card box -->
+                 <div class="space-y-10 md:w-2/4 lg:w-1/3 h-auto">
+                    <!-- card 1 -->
+                     <div class="flex items-center shadow-lg rounded-xl p-10 gap-8">
+                        <img class="w-3/12" src="icons/house.png" alt="">
+                        <div class="">
+                            <span class="text-3xl font-bold">Find the Perfect Fit</span>
+                            <p class="text-2xl text-[#3E3E3E] mt-8">Everybody is different, which is why we
+                                offer styles for every body.</p>
+                        </div>
+                     </div>
+                     <!--card 2  -->
+                    <div class="flex items-center shadow-lg rounded-xl p-8 gap-8">
+                        <img class="w-3/12" src="icons/box.png" alt="">
+                        <div class="">
+                            <span class="text-3xl font-bold">Free Exchanges</span>
+                            <p class="text-2xl text-[#3E3E3E] mt-8">One of the many reasons you can shop
+                            with peace of mind.</p>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="flex items-center shadow-lg rounded-xl p-8 gap-8">
+                        <img class="w-3/12" src="icons/question.png" alt="">
+                        <div class="">
+                            <span class="text-3xl font-bold">Contact Our Seller</span>
+                            <p class="text-2xl text-[#3E3E3E] mt-8">They are here to help you. That's quite
+                            literally what we pay them for.</p>
+                        </div>
+                    </div>
+                 </div>
+                 <!--image box  -->
+                 <div class="md:w-2/4 lg:w-2/3 p-10 h-auto">
+                    <img class="" src="images/shopping.png" alt="">
+                 </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
